@@ -108,9 +108,6 @@ app.post('/users', (req, res) => {
    })
 });
 
-
-
-
 //private route for users
 app.get('/users/me', authenticate, (req, res) => {
   res.send(req.user);
